@@ -1,0 +1,260 @@
+
+
+.navbar {
+    background-color:black;
+}
+
+.navbar .nav-link {
+    color: white;
+    text-transform: capitalize;
+    transition: .3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: red;
+}
+
+.navbar .nav-link.activee {
+    color: red;
+}
+
+.navbar .search {
+    border-left: 1px solid var(--purp-color);
+    color: var(--purp-color);
+}
+
+.mainBtn {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--purp-color);
+    border: 3px solid var(--purp-color);
+    border-radius: 8px;
+    padding: 5px;   
+    transition: .4s ease;
+}
+
+.mainBtn:hover {
+    background-color: var(--purp-color);
+    color: var(--main-color);
+}
+
+.main-title p{
+    border-bottom: 3px solid var(--main-color);
+}
+
+.navbar .navbar-toggler {
+    color: red;
+    font: 25px;
+    border-color: var(--purp-color);
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--blue-color);
+}
+
+.landing {
+    background: url(mainimg.JPG) no-repeat;
+    background-size: cover;
+}
+/* #=========================================# */
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+   }
+   
+   .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: red;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   
+   .cta .btn-link{
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: white;
+   }
+   
+   .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: white;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover:before {
+    width: 100%;
+    background: red;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active {
+    transform: scale(0.95);
+   }
+/* #=========================================# */
+.box {
+    position: relative;
+    bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 0 20px;
+    border-radius: 40px 0 40px 0;
+    transition: .75s ease;
+}
+
+.box:hover {
+    background: url(IMG_3104.JPG) no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.about{
+    background: url(background.jpg) no-repeat;
+    background-size: cover;
+}
+
+.aboutimg{
+    width: 100px;
+    height: 100px;
+}
+
+.background {
+    position: relative;
+    left: 70px;
+}
+
+.hero {
+    position: relative;
+    left: -300px;
+}
+
+.class {
+    background-color: black;
+}
+
+.boxs {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.boxs::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: #ff000080;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    transition: .3s ease;
+    transform: translateX(calc(-100% - 5px));
+}
+
+.boxs:hover::before {
+    transform: translateX(0);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0 20px;
+}
+
+.card-body h6 {
+    border: 1px solid black;
+    border-radius: 23423px;
+}
+
+.img-section {
+    width: 1340px;
+}
+
+#trainer1 {
+    position: absolute;
+    width: 130px;
+    left: 253px;
+}
+
+.cards-body {
+    position: relative;
+    background-color: white;
+    bottom: 15px;
+    box-shadow: 0 0 20px;
+    padding-bottom: 14px;
+    border-radius: 8px;
+    transition: .3s ease;
+}
+
+.cards-body:hover {
+    border-bottom: 5px solid red;
+}
+
+#trainer2{
+    position: absolute;
+    width: 130px;
+    left: 800px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 1023px) {
+    .landing {
+        height: 200px;
+    }
+    .box {
+        bottom: 25px;
+    }
+    .hero {
+        left: 50px;
+        bottom: 0;
+    }
+    .background {
+        left: 15px;
+        top: 456px;
+    }
+    #trainer1 {
+        left: 154px;
+    }
+    #trainer2{
+        left: 138px;
+    }
+    .img-section {
+        width: 426px;
+    }
+}
+
